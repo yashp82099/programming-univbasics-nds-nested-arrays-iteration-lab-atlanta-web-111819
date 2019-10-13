@@ -55,8 +55,10 @@ def total_even_pairs(src)
         number += src[row][0]
       end
     
-    else(src[row][1]%2 == 0)
+    elsif(src[row][1]%2 == 0)
       number += src[row][1]
+    else
+      number = number
     end
   
     row += 1 
